@@ -113,6 +113,7 @@ def format_movie_data(releases):
                 platforms.append(source.get('name', 'Unknown'))
             
             movie = {
+                'id': movie_details.get('id', '0'),
                 'title': movie_details.get('title', 'Unknown'),
                 'image_url': movie_details.get('poster', ''),
                 'release_date': movie_details.get('release_date', ''),
