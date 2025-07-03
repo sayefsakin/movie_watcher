@@ -154,36 +154,3 @@ def api_search():
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
-
-
-# TODO:
-# add data from these
-# https://yts.mx/api/v2/movie_details.json?imdb_id=31193180
-# API doc https://github.com/BrokenEmpire/YTS/blob/master/API.md
-# https://eztvx.to/api/get-torrents?imdb_id=13623126&limit=5
-
-# https://torrent-api-py-nx0x.onrender.com/api/v1/search?site=limetorrent&query=avengers
-# https://github.com/Ryuk-me/Torrent-Api-py?tab=readme-ov-file
-# https://torrent-api-py-nx0x.onrender.com/api/v1/search?site=limetorrent&query=thunderbolts%20%282025%29%201080p%20x265&limit=2
-
-# https://torrent-api-py-nx0x.onrender.com/api/v1/sites
-# {
-#   "supported_sites": [
-#     "1337x",
-#     "torlock",
-#     "zooqle",
-#     "magnetdl",
-#     "tgx",
-#     "nyaasi",
-#     "piratebay",
-#     "bitsearch",
-#     "kickass",
-#     "libgen",
-#     "yts",
-#     "limetorrent",
-#     "torrentfunk",
-#     "glodls",
-#     "torrentproject",
-#     "ybt"
-#   ]
-# }
