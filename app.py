@@ -6,7 +6,8 @@ from datetime import datetime
 app = Flask(__name__)
 
 # Configuration
-WATCHMODE_API_KEY = 'Ne17hVf1kZiaIFXYKfLX06XcRJfkA7KFgq4g9MPn'
+WATCHMODE_API_KEY = 'XsceDGxNTjn6yRkouLffgu2YELgXEWBeKoYXq4tw'
+# 'Ne17hVf1kZiaIFXYKfLX06XcRJfkA7KFgq4g9MPn'
 WATCHMODE_BASE_URL = 'https://api.watchmode.com/v1'
 
 def get_new_releases(self, limit=20):

@@ -113,7 +113,7 @@ async function onMovieCardClick(title, id, year) {
                 existing.remove();
             } else {
                 const t_query = title + ' ' + year + ' 1080p x265';
-                const prepared_url = `https://torrent-api-py-nx0x.onrender.com/api/v1/search?site=limetorrent&limit=5&query=${encodeURIComponent(title)}`
+                const prepared_url = 'https://torrent-api-py-nx0x.onrender.com/api/v1/search?site=limetorrent&limit=5&query=' + encodeURIComponent(t_query);
                 // Fetch from API endpoint
                 const response = await fetch(prepared_url);
                 if (!response.ok) {
@@ -145,9 +145,10 @@ async function onMovieCardClick(title, id, year) {
                 const selectedDiv = document.createElement('div');
                 selectedDiv.className = 'selected-indicator';
 
+                selectedDiv.style.overflowX = 'auto';
+                selectedDiv.style.maxWidth = '100%';
                 const table = document.createElement('table');
                 table.style.marginTop = '10px';
-                table.style.background = '#222';
                 table.style.color = '#fff';
                 table.style.borderCollapse = 'collapse';
                 table.style.width = '100%';
